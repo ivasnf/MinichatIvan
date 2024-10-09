@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="panel-bienvenida">
+        <h1>Bienvenido al Chat</h1>
+        <input type="text" id="persona" placeholder="Nombre de usuario" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" required>
+        <button id="boton-login">Iniciar Sesión</button>
+    </div>
+
+    <div id="app-chat" style="display: none;">
+        <h2>Chat</h2>
+        <h2 id="nombre-usuario"></h2>
+
+        <div id="user-list">
+            <h3>Usuarios Conectados:</h3>
+            <ul id="lista-usuarios"></ul> <!-- Lista de usuarios en línea -->
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-list">
+                <h3>Chats Disponibles:</h3>
+                <ul id="chat-list"></ul> <!-- Lista de chats disponibles -->
+            </div>
+
+            <div class="chat-messages">
+                <h3>Mensajes:</h3>
+                <input type="hidden" id="current-chat-id"> <!-- Chat actual -->
+                <div id="output"></div> <!-- Aquí se mostrarán los mensajes -->
+                <div id="escribiendo-mensaje"></div>
+                <input id="mensaje" placeholder="Escribe un mensaje...">
+                <button id="enviar">Enviar</button>
+                <button id="boton-nuevo-chat">Nuevo Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

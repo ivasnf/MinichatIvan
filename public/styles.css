@@ -1,0 +1,131 @@
+body {
+    font-family: 'Nunito';
+}
+
+h2 {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #337ab7;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#panel-bienvenida {
+    padding: 20% 20%;
+}
+
+#nombre-usuario {
+    background-color: #332da0; 
+    color: white; 
+    padding: 10px; 
+    font-size: 1.2em; 
+    text-align: center; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.chat-list, .chat-messages {
+    width: 48%; 
+    border: 1px solid #ddd; 
+    margin: 10px; 
+    border-radius: 5px; 
+    padding: 10px; 
+    background: #f9f9f9; 
+}
+
+#output {
+    height: 400px;
+    overflow-y: auto; 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+input {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+button {
+    background: #337ab7;
+    color: #ffffff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #246AA6;
+    color: #FAF7F7;
+}
+
+
+/* Estilos adicionales que puedas necesitar */
+#chat-list h3, #mensaje-area h3 {
+    margin: 0 0 10px 0;
+}
+
+#chat-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#chat-list li {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#chat-list li:hover {
+    background-color: #f1f1f1;
+}
+
+
+.nube {
+    background-color: #337ab7;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    color: #ffffff;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.nube::before {
+    background-color: #337ab7;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform: rotate(29deg) skew(-35deg);
+    width: 20px;
+}
+
+.box {
+    float: right;
+    margin: 5px 45px 5px 20px;
+}
+
+.box::before {
+    box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4);
+    left: -9px;
+}
